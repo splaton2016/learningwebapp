@@ -28,7 +28,7 @@ public class IndexModel : PageModel
         //"SELECT CourseID,CourseName,Rating FROM Course;",sqlConnection);
 
         var sqlCommand = new SqlCommand("select CustomerId, FirstName + LastName as CustomerName, " +
-		    "CompanyName from [SalesLT].[Customer];", sqlConnection);
+            "CompanyName from [SalesLT].[Customer];", sqlConnection);
 
          using (SqlDataReader sqlDatareader = sqlCommand.ExecuteReader())
          {
